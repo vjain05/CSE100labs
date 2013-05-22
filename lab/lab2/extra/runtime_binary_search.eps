@@ -1,0 +1,1137 @@
+%!PS-Adobe-2.0 EPSF-1.2
+%%Creator: MATLAB, The MathWorks, Inc. Version 7.13.0.564 (R2011b). Operating System: Linux 2.6.32.28 #6 SMP Tue Feb 22 06:16:56 UTC 2011 x86_64.
+%%Title: ./runtime_binary_search.eps
+%%CreationDate: 03/08/2013  08:10:36
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%Extensions: CMYK
+%%Pages: 1
+%%BoundingBox:    91   185   598   534
+%%EndComments
+
+%%BeginProlog
+% MathWorks dictionary
+/MathWorks 160 dict begin
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s {show newpath} bdef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+% orientation switch
+/portraitMode 0 def /landscapeMode 1 def /rotateMode 2 def
+% coordinate system mappings
+/dpi2point 0 def
+% font control
+/FontSize 0 def
+/FMS {/FontSize xstore findfont [FontSize 0 0 FontSize neg 0 0]
+  makefont setfont} bdef
+/reencode {exch dup where {pop load} {pop StandardEncoding} ifelse
+  exch dup 3 1 roll findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def currentdict end definefont pop} bdef
+/isroman {findfont /CharStrings get /Agrave known} bdef
+/FMSR {3 1 roll 1 index dup isroman {reencode} {pop pop} ifelse
+  exch FMS} bdef
+/csm {1 dpi2point div -1 dpi2point div scale neg translate
+ dup landscapeMode eq {pop -90 rotate}
+  {rotateMode eq {90 rotate} if} ifelse} bdef
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4
+  dpi2point mul] 0 setdash } bdef
+% macros for lines and objects
+/L {lineto stroke} bdef
+/MP {3 1 roll moveto 1 sub {rlineto} repeat} bdef
+/AP {{rlineto} repeat} bdef
+/PDlw -1 def
+/W {/PDlw currentlinewidth def setlinewidth} def
+/PP {closepath eofill} bdef
+/DP {closepath stroke} bdef
+/MR {4 -2 roll moveto dup  0 exch rlineto exch 0 rlineto
+  neg 0 exch rlineto closepath} bdef
+/FR {MR stroke} bdef
+/PR {MR fill} bdef
+/L1i {{currentfile picstr readhexstring pop} image} bdef
+/tMatrix matrix def
+/MakeOval {newpath tMatrix currentmatrix pop translate scale
+0 0 1 0 360 arc tMatrix setmatrix} bdef
+/FO {MakeOval stroke} bdef
+/PO {MakeOval fill} bdef
+/PD {currentlinewidth 2 div 0 360 arc fill
+   PDlw -1 eq not {PDlw w /PDlw -1 def} if} def
+/FA {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arc tMatrix setmatrix stroke} bdef
+/PA {newpath tMatrix currentmatrix pop	translate 0 0 moveto scale
+  0 0 1 5 -2 roll arc closepath tMatrix setmatrix fill} bdef
+/FAn {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arcn tMatrix setmatrix stroke} bdef
+/PAn {newpath tMatrix currentmatrix pop translate 0 0 moveto scale
+  0 0 1 5 -2 roll arcn closepath tMatrix setmatrix fill} bdef
+/vradius 0 def /hradius 0 def /lry 0 def
+/lrx 0 def /uly 0 def /ulx 0 def /rad 0 def
+/MRR {/vradius xdef /hradius xdef /lry xdef /lrx xdef /uly xdef
+  /ulx xdef newpath tMatrix currentmatrix pop ulx hradius add uly
+  vradius add translate hradius vradius scale 0 0 1 180 270 arc 
+  tMatrix setmatrix lrx hradius sub uly vradius add translate
+  hradius vradius scale 0 0 1 270 360 arc tMatrix setmatrix
+  lrx hradius sub lry vradius sub translate hradius vradius scale
+  0 0 1 0 90 arc tMatrix setmatrix ulx hradius add lry vradius sub
+  translate hradius vradius scale 0 0 1 90 180 arc tMatrix setmatrix
+  closepath} bdef
+/FRR {MRR stroke } bdef
+/PRR {MRR fill } bdef
+/MlrRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lry uly sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 90 270 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 270 90 arc tMatrix setmatrix
+  closepath} bdef
+/FlrRR {MlrRR stroke } bdef
+/PlrRR {MlrRR fill } bdef
+/MtbRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lrx ulx sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 180 360 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 0 180 arc tMatrix setmatrix
+  closepath} bdef
+/FtbRR {MtbRR stroke } bdef
+/PtbRR {MtbRR fill } bdef
+/stri 6 array def /dtri 6 array def
+/smat 6 array def /dmat 6 array def
+/tmat1 6 array def /tmat2 6 array def /dif 3 array def
+/asub {/ind2 exch def /ind1 exch def dup dup
+  ind1 get exch ind2 get sub exch } bdef
+/tri_to_matrix {
+  2 0 asub 3 1 asub 4 0 asub 5 1 asub
+  dup 0 get exch 1 get 7 -1 roll astore } bdef
+/compute_transform {
+  dmat dtri tri_to_matrix tmat1 invertmatrix 
+  smat stri tri_to_matrix tmat2 concatmatrix } bdef
+/ds {stri astore pop} bdef
+/dt {dtri astore pop} bdef
+/db {2 copy /cols xdef /rows xdef mul dup 3 mul string
+  currentfile exch readhexstring pop
+  dup 0 3 index getinterval /rbmap xdef
+  dup 2 index dup getinterval /gbmap xdef
+  1 index dup 2 mul exch getinterval /bbmap xdef pop pop}bdef
+/it {gs np dtri aload pop moveto lineto lineto cp c
+  cols rows 8 compute_transform 
+  rbmap gbmap bbmap true 3 colorimage gr}bdef
+/il {newpath moveto lineto stroke}bdef
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    91   185   598   534
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0216 7344 csm
+
+  880   934  6080  4179 MR c np
+76 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 sr} bdef
+/c1 { 1.000000 1.000000 1.000000 sr} bdef
+/c2 { 0.900000 0.000000 0.000000 sr} bdef
+/c3 { 0.000000 0.820000 0.000000 sr} bdef
+/c4 { 0.000000 0.000000 0.800000 sr} bdef
+/c5 { 0.910000 0.820000 0.320000 sr} bdef
+/c6 { 1.000000 0.260000 0.820000 sr} bdef
+/c7 { 0.000000 0.820000 0.820000 sr} bdef
+c0
+1 j
+1 sg
+   0    0 6913 5186 PR
+6 w
+0 3371 2420 0 0 -3371 1382 4667 4 MP
+PP
+-2420 0 0 3371 2420 0 0 -3371 1382 4667 5 MP stroke
+4 w
+DO
+SO
+6 w
+0 sg
+1382 4667 mt 3802 4667 L
+1382 1296 mt 3802 1296 L
+1382 4667 mt 1382 1296 L
+3802 4667 mt 3802 1296 L
+1382 4667 mt 3802 4667 L
+1382 4667 mt 1382 1296 L
+1727 4667 mt 1727 4650 L
+1727 1296 mt 1727 1312 L
+1711 4667 mt 1711 4650 L
+1711 1296 mt 1711 1312 L
+1694 4667 mt 1694 4650 L
+1694 1296 mt 1694 1312 L
+1674 4667 mt 1674 4650 L
+1674 1296 mt 1674 1312 L
+1651 4667 mt 1651 4650 L
+1651 1296 mt 1651 1312 L
+1623 4667 mt 1623 4650 L
+1623 1296 mt 1623 1312 L
+1590 4667 mt 1590 4650 L
+1590 1296 mt 1590 1312 L
+1546 4667 mt 1546 4650 L
+1546 1296 mt 1546 1312 L
+1486 4667 mt 1486 4650 L
+1486 1296 mt 1486 1312 L
+1727 4667 mt 1727 4633 L
+1727 1296 mt 1727 1329 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+1639 4849 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+1772 4775 mt 
+(2) s
+1831 4667 mt 1831 4650 L
+1831 1296 mt 1831 1312 L
+1892 4667 mt 1892 4650 L
+1892 1296 mt 1892 1312 L
+1935 4667 mt 1935 4650 L
+1935 1296 mt 1935 1312 L
+1969 4667 mt 1969 4650 L
+1969 1296 mt 1969 1312 L
+1996 4667 mt 1996 4650 L
+1996 1296 mt 1996 1312 L
+2019 4667 mt 2019 4650 L
+2019 1296 mt 2019 1312 L
+2039 4667 mt 2039 4650 L
+2039 1296 mt 2039 1312 L
+2057 4667 mt 2057 4650 L
+2057 1296 mt 2057 1312 L
+2073 4667 mt 2073 4650 L
+2073 1296 mt 2073 1312 L
+2073 4667 mt 2073 4633 L
+2073 1296 mt 2073 1329 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+1985 4849 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+2118 4775 mt 
+(3) s
+2177 4667 mt 2177 4650 L
+2177 1296 mt 2177 1312 L
+2238 4667 mt 2238 4650 L
+2238 1296 mt 2238 1312 L
+2281 4667 mt 2281 4650 L
+2281 1296 mt 2281 1312 L
+2315 4667 mt 2315 4650 L
+2315 1296 mt 2315 1312 L
+2342 4667 mt 2342 4650 L
+2342 1296 mt 2342 1312 L
+2365 4667 mt 2365 4650 L
+2365 1296 mt 2365 1312 L
+2385 4667 mt 2385 4650 L
+2385 1296 mt 2385 1312 L
+2403 4667 mt 2403 4650 L
+2403 1296 mt 2403 1312 L
+2419 4667 mt 2419 4650 L
+2419 1296 mt 2419 1312 L
+2419 4667 mt 2419 4633 L
+2419 1296 mt 2419 1329 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+2331 4849 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+2464 4775 mt 
+(4) s
+2523 4667 mt 2523 4650 L
+2523 1296 mt 2523 1312 L
+2584 4667 mt 2584 4650 L
+2584 1296 mt 2584 1312 L
+2627 4667 mt 2627 4650 L
+2627 1296 mt 2627 1312 L
+2660 4667 mt 2660 4650 L
+2660 1296 mt 2660 1312 L
+2688 4667 mt 2688 4650 L
+2688 1296 mt 2688 1312 L
+2711 4667 mt 2711 4650 L
+2711 1296 mt 2711 1312 L
+2731 4667 mt 2731 4650 L
+2731 1296 mt 2731 1312 L
+2749 4667 mt 2749 4650 L
+2749 1296 mt 2749 1312 L
+2764 4667 mt 2764 4650 L
+2764 1296 mt 2764 1312 L
+2764 4667 mt 2764 4633 L
+2764 1296 mt 2764 1329 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+2676 4849 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+2809 4775 mt 
+(5) s
+2868 4667 mt 2868 4650 L
+2868 1296 mt 2868 1312 L
+2929 4667 mt 2929 4650 L
+2929 1296 mt 2929 1312 L
+2972 4667 mt 2972 4650 L
+2972 1296 mt 2972 1312 L
+3006 4667 mt 3006 4650 L
+3006 1296 mt 3006 1312 L
+3033 4667 mt 3033 4650 L
+3033 1296 mt 3033 1312 L
+3057 4667 mt 3057 4650 L
+3057 1296 mt 3057 1312 L
+3077 4667 mt 3077 4650 L
+3077 1296 mt 3077 1312 L
+3094 4667 mt 3094 4650 L
+3094 1296 mt 3094 1312 L
+3110 4667 mt 3110 4650 L
+3110 1296 mt 3110 1312 L
+3110 4667 mt 3110 4633 L
+3110 1296 mt 3110 1329 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+3022 4849 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+3155 4775 mt 
+(6) s
+3214 4667 mt 3214 4650 L
+3214 1296 mt 3214 1312 L
+3275 4667 mt 3275 4650 L
+3275 1296 mt 3275 1312 L
+3318 4667 mt 3318 4650 L
+3318 1296 mt 3318 1312 L
+3352 4667 mt 3352 4650 L
+3352 1296 mt 3352 1312 L
+3379 4667 mt 3379 4650 L
+3379 1296 mt 3379 1312 L
+3402 4667 mt 3402 4650 L
+3402 1296 mt 3402 1312 L
+3422 4667 mt 3422 4650 L
+3422 1296 mt 3422 1312 L
+3440 4667 mt 3440 4650 L
+3440 1296 mt 3440 1312 L
+3456 4667 mt 3456 4650 L
+3456 1296 mt 3456 1312 L
+3456 4667 mt 3456 4633 L
+3456 1296 mt 3456 1329 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+3368 4849 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+3501 4775 mt 
+(7) s
+3560 4667 mt 3560 4650 L
+3560 1296 mt 3560 1312 L
+3621 4667 mt 3621 4650 L
+3621 1296 mt 3621 1312 L
+3664 4667 mt 3664 4650 L
+3664 1296 mt 3664 1312 L
+3697 4667 mt 3697 4650 L
+3697 1296 mt 3697 1312 L
+3725 4667 mt 3725 4650 L
+3725 1296 mt 3725 1312 L
+3748 4667 mt 3748 4650 L
+3748 1296 mt 3748 1312 L
+3768 4667 mt 3768 4650 L
+3768 1296 mt 3768 1312 L
+3786 4667 mt 3786 4650 L
+3786 1296 mt 3786 1312 L
+3802 4667 mt 3802 4650 L
+3802 1296 mt 3802 1312 L
+3802 4667 mt 3802 4633 L
+3802 1296 mt 3802 1329 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+3714 4849 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+3847 4775 mt 
+(8) s
+1382 4667 mt 1415 4667 L
+3802 4667 mt 3768 4667 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+1281 4711 mt 
+(2) s
+1382 4105 mt 1415 4105 L
+3802 4105 mt 3768 4105 L
+1181 4149 mt 
+(2.5) s
+1382 3543 mt 1415 3543 L
+3802 3543 mt 3768 3543 L
+1281 3587 mt 
+(3) s
+1382 2981 mt 1415 2981 L
+3802 2981 mt 3768 2981 L
+1181 3025 mt 
+(3.5) s
+1382 2419 mt 1415 2419 L
+3802 2419 mt 3768 2419 L
+1281 2463 mt 
+(4) s
+1382 1857 mt 1415 1857 L
+3802 1857 mt 3768 1857 L
+1181 1901 mt 
+(4.5) s
+1382 1296 mt 1415 1296 L
+3802 1296 mt 3768 1296 L
+1281 1340 mt 
+(5) s
+1382 1242 mt 
+(x 10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+1608 1168 mt 
+(-5) s
+1382 4667 mt 3802 4667 L
+1382 1296 mt 3802 1296 L
+1382 4667 mt 1382 1296 L
+3802 4667 mt 3802 1296 L
+gs 1382 1296 2421 3372 MR c np
+/c8 { 1.000000 0.000000 0.000000 sr} bdef
+c8
+346 -113 346 -449 346 -1573 345 -337 346 -113 346 -112 1727 4554 7 MP stroke
+gr
+
+c8
+gs 1654 1784 2222 2844 MR c np
+  36   36 1727 4554 FO
+  36   36 2073 4442 FO
+  36   36 2419 4329 FO
+  36   36 2764 3992 FO
+  36   36 3110 2419 FO
+  36   36 3456 1970 FO
+  36   36 3802 1857 FO
+gr
+
+gs 1382 1296 2421 3372 MR c np
+gr
+
+0 sg
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 192 FMSR
+
+2538 5045 mt 
+(n) s
+1083 3403 mt  -90 rotate
+(time \(sec\)) s
+90 rotate
+2001 1185 mt 
+(T\(n\) vs. log\(n\)) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+1365 4710 mt 
+( ) s
+3786 1338 mt 
+( ) s
+1 sg
+0 480 1813 0 0 -480 1930 1836 4 MP
+PP
+-1813 0 0 480 1813 0 0 -480 1930 1836 5 MP stroke
+4 w
+DO
+SO
+6 w
+0 sg
+1930 1836 mt 3743 1836 L
+1930 1356 mt 3743 1356 L
+1930 1836 mt 1930 1356 L
+3743 1836 mt 3743 1356 L
+1930 1836 mt 3743 1836 L
+1930 1836 mt 1930 1356 L
+1930 1836 mt 3743 1836 L
+1930 1356 mt 3743 1356 L
+1930 1836 mt 1930 1356 L
+3743 1836 mt 3743 1356 L
+2395 1491 mt 
+(a--binary search \(k=10\)) s
+gs 1930 1356 1814 481 MR c np
+c8
+358 0 2001 1448 2 MP stroke
+gs 2107 1375 147 147 MR c np
+  36   36 2180 1448 FO
+gr
+
+gr
+
+c8
+0 sg
+2395 1639 mt 
+(d--binary search \(k=10\)) s
+gs 1930 1356 1814 481 MR c np
+/c9 { 0.000000 1.000000 0.000000 sr} bdef
+c9
+358 0 2001 1596 2 MP stroke
+gs 2107 1523 147 147 MR c np
+0 j
+-41 71 -41 -71 82 0 2139 1620 4 MP
+DP
+gr
+
+gr
+
+c9
+0 sg
+2395 1786 mt 
+(u--binary search \(k=10\)) s
+gs 1930 1356 1814 481 MR c np
+/c10 { 0.000000 0.000000 1.000000 sr} bdef
+c10
+358 0 2001 1743 2 MP stroke
+gs 2107 1670 147 147 MR c np
+2144 1743 mt 2216 1743 L
+2180 1707 mt 2180 1779 L
+2155 1718 mt 2205 1768 L
+2205 1718 mt 2155 1768 L
+gr
+
+gr
+
+c10
+1 sg
+0 3371 2408 0 0 -3371 4429 4667 4 MP
+PP
+-2408 0 0 3371 2408 0 0 -3371 4429 4667 5 MP stroke
+4 w
+DO
+SO
+6 w
+0 sg
+4429 4667 mt 6837 4667 L
+4429 1296 mt 6837 1296 L
+4429 4667 mt 4429 1296 L
+6837 4667 mt 6837 1296 L
+4429 4667 mt 6837 4667 L
+4429 4667 mt 4429 1296 L
+4773 4667 mt 4773 4650 L
+4773 1296 mt 4773 1312 L
+4757 4667 mt 4757 4650 L
+4757 1296 mt 4757 1312 L
+4740 4667 mt 4740 4650 L
+4740 1296 mt 4740 1312 L
+4720 4667 mt 4720 4650 L
+4720 1296 mt 4720 1312 L
+4697 4667 mt 4697 4650 L
+4697 1296 mt 4697 1312 L
+4670 4667 mt 4670 4650 L
+4670 1296 mt 4670 1312 L
+4636 4667 mt 4636 4650 L
+4636 1296 mt 4636 1312 L
+4593 4667 mt 4593 4650 L
+4593 1296 mt 4593 1312 L
+4533 4667 mt 4533 4650 L
+4533 1296 mt 4533 1312 L
+4773 4667 mt 4773 4633 L
+4773 1296 mt 4773 1329 L
+4685 4849 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+4818 4775 mt 
+(2) s
+4877 4667 mt 4877 4650 L
+4877 1296 mt 4877 1312 L
+4937 4667 mt 4937 4650 L
+4937 1296 mt 4937 1312 L
+4980 4667 mt 4980 4650 L
+4980 1296 mt 4980 1312 L
+5013 4667 mt 5013 4650 L
+5013 1296 mt 5013 1312 L
+5041 4667 mt 5041 4650 L
+5041 1296 mt 5041 1312 L
+5064 4667 mt 5064 4650 L
+5064 1296 mt 5064 1312 L
+5084 4667 mt 5084 4650 L
+5084 1296 mt 5084 1312 L
+5101 4667 mt 5101 4650 L
+5101 1296 mt 5101 1312 L
+5117 4667 mt 5117 4650 L
+5117 1296 mt 5117 1312 L
+5117 4667 mt 5117 4633 L
+5117 1296 mt 5117 1329 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+5029 4849 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+5162 4775 mt 
+(3) s
+5221 4667 mt 5221 4650 L
+5221 1296 mt 5221 1312 L
+5281 4667 mt 5281 4650 L
+5281 1296 mt 5281 1312 L
+5324 4667 mt 5324 4650 L
+5324 1296 mt 5324 1312 L
+5357 4667 mt 5357 4650 L
+5357 1296 mt 5357 1312 L
+5385 4667 mt 5385 4650 L
+5385 1296 mt 5385 1312 L
+5408 4667 mt 5408 4650 L
+5408 1296 mt 5408 1312 L
+5428 4667 mt 5428 4650 L
+5428 1296 mt 5428 1312 L
+5445 4667 mt 5445 4650 L
+5445 1296 mt 5445 1312 L
+5461 4667 mt 5461 4650 L
+5461 1296 mt 5461 1312 L
+5461 4667 mt 5461 4633 L
+5461 1296 mt 5461 1329 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+5373 4849 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+5506 4775 mt 
+(4) s
+5565 4667 mt 5565 4650 L
+5565 1296 mt 5565 1312 L
+5625 4667 mt 5625 4650 L
+5625 1296 mt 5625 1312 L
+5668 4667 mt 5668 4650 L
+5668 1296 mt 5668 1312 L
+5701 4667 mt 5701 4650 L
+5701 1296 mt 5701 1312 L
+5729 4667 mt 5729 4650 L
+5729 1296 mt 5729 1312 L
+5752 4667 mt 5752 4650 L
+5752 1296 mt 5752 1312 L
+5772 4667 mt 5772 4650 L
+5772 1296 mt 5772 1312 L
+5789 4667 mt 5789 4650 L
+5789 1296 mt 5789 1312 L
+5805 4667 mt 5805 4650 L
+5805 1296 mt 5805 1312 L
+5805 4667 mt 5805 4633 L
+5805 1296 mt 5805 1329 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+5717 4849 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+5850 4775 mt 
+(5) s
+5909 4667 mt 5909 4650 L
+5909 1296 mt 5909 1312 L
+5969 4667 mt 5969 4650 L
+5969 1296 mt 5969 1312 L
+6012 4667 mt 6012 4650 L
+6012 1296 mt 6012 1312 L
+6045 4667 mt 6045 4650 L
+6045 1296 mt 6045 1312 L
+6073 4667 mt 6073 4650 L
+6073 1296 mt 6073 1312 L
+6096 4667 mt 6096 4650 L
+6096 1296 mt 6096 1312 L
+6116 4667 mt 6116 4650 L
+6116 1296 mt 6116 1312 L
+6133 4667 mt 6133 4650 L
+6133 1296 mt 6133 1312 L
+6149 4667 mt 6149 4650 L
+6149 1296 mt 6149 1312 L
+6149 4667 mt 6149 4633 L
+6149 1296 mt 6149 1329 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+6061 4849 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+6194 4775 mt 
+(6) s
+6253 4667 mt 6253 4650 L
+6253 1296 mt 6253 1312 L
+6313 4667 mt 6313 4650 L
+6313 1296 mt 6313 1312 L
+6356 4667 mt 6356 4650 L
+6356 1296 mt 6356 1312 L
+6389 4667 mt 6389 4650 L
+6389 1296 mt 6389 1312 L
+6417 4667 mt 6417 4650 L
+6417 1296 mt 6417 1312 L
+6440 4667 mt 6440 4650 L
+6440 1296 mt 6440 1312 L
+6460 4667 mt 6460 4650 L
+6460 1296 mt 6460 1312 L
+6477 4667 mt 6477 4650 L
+6477 1296 mt 6477 1312 L
+6493 4667 mt 6493 4650 L
+6493 1296 mt 6493 1312 L
+6493 4667 mt 6493 4633 L
+6493 1296 mt 6493 1329 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+6405 4849 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+6538 4775 mt 
+(7) s
+6596 4667 mt 6596 4650 L
+6596 1296 mt 6596 1312 L
+6657 4667 mt 6657 4650 L
+6657 1296 mt 6657 1312 L
+6700 4667 mt 6700 4650 L
+6700 1296 mt 6700 1312 L
+6733 4667 mt 6733 4650 L
+6733 1296 mt 6733 1312 L
+6761 4667 mt 6761 4650 L
+6761 1296 mt 6761 1312 L
+6784 4667 mt 6784 4650 L
+6784 1296 mt 6784 1312 L
+6804 4667 mt 6804 4650 L
+6804 1296 mt 6804 1312 L
+6821 4667 mt 6821 4650 L
+6821 1296 mt 6821 1312 L
+6837 4667 mt 6837 4650 L
+6837 1296 mt 6837 1312 L
+6837 4667 mt 6837 4633 L
+6837 1296 mt 6837 1329 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+6749 4849 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+6882 4775 mt 
+(8) s
+4429 4667 mt 4446 4667 L
+6837 4667 mt 6820 4667 L
+4429 4667 mt 4463 4667 L
+6837 4667 mt 6803 4667 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+4171 4711 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+4304 4637 mt 
+(-6) s
+4429 4565 mt 4446 4565 L
+6837 4565 mt 6820 4565 L
+4429 4506 mt 4446 4506 L
+6837 4506 mt 6820 4506 L
+4429 4464 mt 4446 4464 L
+6837 4464 mt 6820 4464 L
+4429 4431 mt 4446 4431 L
+6837 4431 mt 6820 4431 L
+4429 4404 mt 4446 4404 L
+6837 4404 mt 6820 4404 L
+4429 4382 mt 4446 4382 L
+6837 4382 mt 6820 4382 L
+4429 4362 mt 4446 4362 L
+6837 4362 mt 6820 4362 L
+4429 4345 mt 4446 4345 L
+6837 4345 mt 6820 4345 L
+4429 4329 mt 4446 4329 L
+6837 4329 mt 6820 4329 L
+4429 4329 mt 4463 4329 L
+6837 4329 mt 6803 4329 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+4171 4373 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+4304 4299 mt 
+(-5) s
+4429 4228 mt 4446 4228 L
+6837 4228 mt 6820 4228 L
+4429 4169 mt 4446 4169 L
+6837 4169 mt 6820 4169 L
+4429 4126 mt 4446 4126 L
+6837 4126 mt 6820 4126 L
+4429 4094 mt 4446 4094 L
+6837 4094 mt 6820 4094 L
+4429 4067 mt 4446 4067 L
+6837 4067 mt 6820 4067 L
+4429 4045 mt 4446 4045 L
+6837 4045 mt 6820 4045 L
+4429 4025 mt 4446 4025 L
+6837 4025 mt 6820 4025 L
+4429 4008 mt 4446 4008 L
+6837 4008 mt 6820 4008 L
+4429 3992 mt 4446 3992 L
+6837 3992 mt 6820 3992 L
+4429 3992 mt 4463 3992 L
+6837 3992 mt 6803 3992 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+4171 4036 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+4304 3962 mt 
+(-4) s
+4429 3891 mt 4446 3891 L
+6837 3891 mt 6820 3891 L
+4429 3831 mt 4446 3831 L
+6837 3831 mt 6820 3831 L
+4429 3789 mt 4446 3789 L
+6837 3789 mt 6820 3789 L
+4429 3757 mt 4446 3757 L
+6837 3757 mt 6820 3757 L
+4429 3730 mt 4446 3730 L
+6837 3730 mt 6820 3730 L
+4429 3707 mt 4446 3707 L
+6837 3707 mt 6820 3707 L
+4429 3688 mt 4446 3688 L
+6837 3688 mt 6820 3688 L
+4429 3671 mt 4446 3671 L
+6837 3671 mt 6820 3671 L
+4429 3655 mt 4446 3655 L
+6837 3655 mt 6820 3655 L
+4429 3655 mt 4463 3655 L
+6837 3655 mt 6803 3655 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+4171 3699 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+4304 3625 mt 
+(-3) s
+4429 3554 mt 4446 3554 L
+6837 3554 mt 6820 3554 L
+4429 3494 mt 4446 3494 L
+6837 3494 mt 6820 3494 L
+4429 3452 mt 4446 3452 L
+6837 3452 mt 6820 3452 L
+4429 3420 mt 4446 3420 L
+6837 3420 mt 6820 3420 L
+4429 3393 mt 4446 3393 L
+6837 3393 mt 6820 3393 L
+4429 3370 mt 4446 3370 L
+6837 3370 mt 6820 3370 L
+4429 3351 mt 4446 3351 L
+6837 3351 mt 6820 3351 L
+4429 3334 mt 4446 3334 L
+6837 3334 mt 6820 3334 L
+4429 3318 mt 4446 3318 L
+6837 3318 mt 6820 3318 L
+4429 3318 mt 4463 3318 L
+6837 3318 mt 6803 3318 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+4171 3362 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+4304 3288 mt 
+(-2) s
+4429 3217 mt 4446 3217 L
+6837 3217 mt 6820 3217 L
+4429 3157 mt 4446 3157 L
+6837 3157 mt 6820 3157 L
+4429 3115 mt 4446 3115 L
+6837 3115 mt 6820 3115 L
+4429 3082 mt 4446 3082 L
+6837 3082 mt 6820 3082 L
+4429 3056 mt 4446 3056 L
+6837 3056 mt 6820 3056 L
+4429 3033 mt 4446 3033 L
+6837 3033 mt 6820 3033 L
+4429 3014 mt 4446 3014 L
+6837 3014 mt 6820 3014 L
+4429 2996 mt 4446 2996 L
+6837 2996 mt 6820 2996 L
+4429 2981 mt 4446 2981 L
+6837 2981 mt 6820 2981 L
+4429 2981 mt 4463 2981 L
+6837 2981 mt 6803 2981 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+4171 3025 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+4304 2951 mt 
+(-1) s
+4429 2880 mt 4446 2880 L
+6837 2880 mt 6820 2880 L
+4429 2820 mt 4446 2820 L
+6837 2820 mt 6820 2820 L
+4429 2778 mt 4446 2778 L
+6837 2778 mt 6820 2778 L
+4429 2745 mt 4446 2745 L
+6837 2745 mt 6820 2745 L
+4429 2719 mt 4446 2719 L
+6837 2719 mt 6820 2719 L
+4429 2696 mt 4446 2696 L
+6837 2696 mt 6820 2696 L
+4429 2677 mt 4446 2677 L
+6837 2677 mt 6820 2677 L
+4429 2659 mt 4446 2659 L
+6837 2659 mt 6820 2659 L
+4429 2644 mt 4446 2644 L
+6837 2644 mt 6820 2644 L
+4429 2644 mt 4463 2644 L
+6837 2644 mt 6803 2644 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+4171 2688 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+4304 2614 mt 
+(0) s
+4429 2542 mt 4446 2542 L
+6837 2542 mt 6820 2542 L
+4429 2483 mt 4446 2483 L
+6837 2483 mt 6820 2483 L
+4429 2441 mt 4446 2441 L
+6837 2441 mt 6820 2441 L
+4429 2408 mt 4446 2408 L
+6837 2408 mt 6820 2408 L
+4429 2382 mt 4446 2382 L
+6837 2382 mt 6820 2382 L
+4429 2359 mt 4446 2359 L
+6837 2359 mt 6820 2359 L
+4429 2339 mt 4446 2339 L
+6837 2339 mt 6820 2339 L
+4429 2322 mt 4446 2322 L
+6837 2322 mt 6820 2322 L
+4429 2307 mt 4446 2307 L
+6837 2307 mt 6820 2307 L
+4429 2307 mt 4463 2307 L
+6837 2307 mt 6803 2307 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+4171 2351 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+4304 2277 mt 
+(1) s
+4429 2205 mt 4446 2205 L
+6837 2205 mt 6820 2205 L
+4429 2146 mt 4446 2146 L
+6837 2146 mt 6820 2146 L
+4429 2104 mt 4446 2104 L
+6837 2104 mt 6820 2104 L
+4429 2071 mt 4446 2071 L
+6837 2071 mt 6820 2071 L
+4429 2044 mt 4446 2044 L
+6837 2044 mt 6820 2044 L
+4429 2022 mt 4446 2022 L
+6837 2022 mt 6820 2022 L
+4429 2002 mt 4446 2002 L
+6837 2002 mt 6820 2002 L
+4429 1985 mt 4446 1985 L
+6837 1985 mt 6820 1985 L
+4429 1970 mt 4446 1970 L
+6837 1970 mt 6820 1970 L
+4429 1970 mt 4463 1970 L
+6837 1970 mt 6803 1970 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+4171 2014 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+4304 1940 mt 
+(2) s
+4429 1868 mt 4446 1868 L
+6837 1868 mt 6820 1868 L
+4429 1809 mt 4446 1809 L
+6837 1809 mt 6820 1809 L
+4429 1767 mt 4446 1767 L
+6837 1767 mt 6820 1767 L
+4429 1734 mt 4446 1734 L
+6837 1734 mt 6820 1734 L
+4429 1707 mt 4446 1707 L
+6837 1707 mt 6820 1707 L
+4429 1685 mt 4446 1685 L
+6837 1685 mt 6820 1685 L
+4429 1665 mt 4446 1665 L
+6837 1665 mt 6820 1665 L
+4429 1648 mt 4446 1648 L
+6837 1648 mt 6820 1648 L
+4429 1633 mt 4446 1633 L
+6837 1633 mt 6820 1633 L
+4429 1633 mt 4463 1633 L
+6837 1633 mt 6803 1633 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+4171 1677 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+4304 1603 mt 
+(3) s
+4429 1531 mt 4446 1531 L
+6837 1531 mt 6820 1531 L
+4429 1472 mt 4446 1472 L
+6837 1472 mt 6820 1472 L
+4429 1430 mt 4446 1430 L
+6837 1430 mt 6820 1430 L
+4429 1397 mt 4446 1397 L
+6837 1397 mt 6820 1397 L
+4429 1370 mt 4446 1370 L
+6837 1370 mt 6820 1370 L
+4429 1348 mt 4446 1348 L
+6837 1348 mt 6820 1348 L
+4429 1328 mt 4446 1328 L
+6837 1328 mt 6820 1328 L
+4429 1311 mt 4446 1311 L
+6837 1311 mt 6820 1311 L
+4429 1296 mt 4446 1296 L
+6837 1296 mt 6820 1296 L
+4429 1296 mt 4463 1296 L
+6837 1296 mt 6803 1296 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+4171 1340 mt 
+(10) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 80 FMSR
+
+4304 1266 mt 
+(4) s
+4429 4667 mt 6837 4667 L
+4429 1296 mt 6837 1296 L
+4429 4667 mt 4429 1296 L
+6837 4667 mt 6837 1296 L
+gs 4429 1296 2409 3372 MR c np
+c8
+344 -3 344 -14 344 -64 344 -17 344 -7 344 -7 4773 4221 7 MP stroke
+gr
+
+c8
+gs 4700 4036 2211 259 MR c np
+  36   36 4773 4221 FO
+  36   36 5117 4214 FO
+  36   36 5461 4207 FO
+  36   36 5805 4190 FO
+  36   36 6149 4126 FO
+  36   36 6493 4112 FO
+  36   36 6837 4109 FO
+gr
+
+gs 4429 1296 2409 3372 MR c np
+gr
+
+0 sg
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 192 FMSR
+
+5579 5045 mt 
+(n) s
+4073 3403 mt  -90 rotate
+(time \(sec\)) s
+90 rotate
+4850 1185 mt 
+(log\(T\(n\)\) vs. log\(n\)) s
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF
